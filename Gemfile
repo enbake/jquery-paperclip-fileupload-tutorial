@@ -41,4 +41,3 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 gem 'paperclip'
-gem 'rmagick'

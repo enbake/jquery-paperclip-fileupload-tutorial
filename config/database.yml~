@@ -1,0 +1,25 @@
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+staging: &defaults
+ adapter: postgresql
+ encoding: utf8
+ database: kam_staging
+ pool: 5
+ username: root
+ password: admin
+ host: 127.0.0.1
+
+test:
+ <<: *defaults
+ database: jfu_test
+
+production:
+ <<: *defaults
+ database: jfu_production
+
+development:
+ <<: *defaults
+ database: jfu_development
